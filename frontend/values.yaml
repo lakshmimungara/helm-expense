@@ -1,13 +1,7 @@
 
 deployment:
   replicas: 2
-  imageVersion: 2
+  imageVersion: v1
 hpa:
   cpuUtilization: 15
-image:
-  repository: mahalakshmi2997/frontend:v1
-  tag: "1.0.0"
-  pullPolicy: IfNotPresent
 
-imagePullSecrets:
-  - name: myregistrysecret
