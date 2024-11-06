@@ -1,6 +1,13 @@
+# deployment:
+#   imageVersion: latest
+#   replicas: 2
+# service:
+#   port: 80
+#   type: LoadBalancer
+
 deployment:
-  imageVersion: latest
-  replicas: 2
+  imageVersion: stable-perl
+  replicas: 4
 service:
   port: 80
   type: LoadBalancer
